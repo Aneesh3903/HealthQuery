@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#" class="logo"><span class="h">H</span>ealth<span id="folio"><span class="q">Q</span>uery</span></a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">contact</a>
+            <a href=""></a>
+        </nav>
+    </header>
+    <div class="container">
+        <h1 class="sd">Search Diseases</h1>
+        <input type="text" id="search" placeholder="Search for a disease..." onkeyup="filterHospitals()">
+        <table>
+            <thead>
+                <tr>
+                    <th>Disease </th>
+                    <th>Hospital Name</th>
+                    <th>Bed Availability</th>
+
+                </tr>
+            </thead>
+            <tbody id="hospital-list">
+            </tbody>
+        </table>
+    </div>
+    <div class="container">
+        <h1 class="ds">Doctor Search</h1>
+
+        <input type="text" id="searchInput" placeholder="Search for a doctor...">
+        <button onclick="searchDoctor()">Search</button>
+
+        
+        <div id="doctorList">
+            
+        </div>
+
+        
+        <div id="chatbox" class="hidden">
+            <h2>Chat with Doctor</h2>
+            <div id="chatMessages"></div>
+            <input type="text" id="chatInput" placeholder="Type a message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+     <!-- <section class="about">  
+        <div class="about-text">
+            <h2>About</h2>
+            <h4>Frontend Developer!</h4>
+            <p>This project is designed to simplify healthcare access. It features a search bar where users can search
+                for various diseases, and the corresponding hospital names along with bed availability will be
+                displayed. Additionally, users can search for doctors and get the option to communicate with them
+                directly through the platform.</p> 
+
+            <a href="#" class="btn-box">More About</a>
+
+        </div>
+    </section>-->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+</body>
+
+</html>
